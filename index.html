@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style=" scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 <body style="height: auto; margin: 0; font-family: 'poppins';">
   
     <main>
-        <section class="hero" style="background:url(/assets/Dot\ Grid.png), linear-gradient(to bottom left, #0E031D 0%, #270850 61%, #3F0E83 96%); min-height: 80vh; padding:40px; background-repeat: no-repeat;">
+        <section class="hero" id="home" style="background:url(/assets/Dot\ Grid.png), linear-gradient(to bottom left, #0E031D 0%, #270850 61%, #3F0E83 96%); min-height: 80vh; padding:40px; background-repeat: no-repeat;">
             <header>
                 <nav style="position: relative;">
                     <div class="logo" style=" position: relative;">
@@ -20,14 +20,14 @@
                     </div>
 
                     <div class="links" style="position: absolute; left:40%;"> 
-                        <a href="#" style="color: white; text-decoration: none; font-size: 16px;">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
-                        <a href="#" style="color: white; text-decoration: none; font-size: 16px;">Sobre</a> &nbsp; &nbsp; &nbsp; &nbsp;
-                        <a href="#" style="color: white; text-decoration: none; font-size: 16px;">Serviços</a> &nbsp; &nbsp; &nbsp; &nbsp;
-                        <a href="#" style="color: white; text-decoration: none; font-size: 16px;">Contato</a>
+                        <a href="#home" style="color: white; text-decoration: none; font-size: 16px;">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="#problema" style="color: white; text-decoration: none; font-size: 16px;">Sobre</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="#solucao" style="color: white; text-decoration: none; font-size: 16px;">Serviços</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="#footer" style="color: white; text-decoration: none; font-size: 16px;">Contato</a>
                     </div>
 
-                    <a href="#">
-                        <button style="position: absolute; right:20px; width:120px; height: 40px; border-radius: 20px; top:-7px; background-color: transparent; color: white; font-family: 'roboto'; font-size: 16px; border: 1px solid #C3C3C3 ;">
+                    <a href="/login.html">
+                        <button style="font-family:'poppins'; position: absolute; right:20px; width:120px; height: 40px; border-radius: 20px; top:-7px; background-color: transparent; color: white;font-size: 16px; border: 1px solid #C3C3C3 ;">
                             Entrar
                         </button>
                     </a>
@@ -38,13 +38,13 @@
                     <p style="color: white; font-weight: 600; margin-top:0; margin-bottom: 0;">perder o controle do seu tempo.</p>
                     
                 <div class="callAction-buttons" style="margin-top: -20px;">
-                    <button style="width:120px; height:40px; border-radius:20px; border:1px solid white; font-family: 'poppins'; background-color: transparent; color:white;">Sobre nós</button>
-                    <button style="width:120px; height:40px; border-radius:20px; border:0; font-family: 'poppins'; background: linear-gradient(to bottom left, #49227B, #AE8CDA); color: white;">Cadastrar</button>
+                    <a href="#problema"><button style="width:120px; height:40px; border-radius:20px; border:1px solid white; font-family: 'poppins'; background-color: transparent; color:white;">Sobre nós</button></a>
+                    <a href="/cadastro.html"><button style="width:120px; height:40px; border-radius:20px; border:0; font-family: 'poppins'; background: linear-gradient(to bottom left, #49227B, #AE8CDA); color: white;">Cadastrar</button></a>
                 </div>
             </div>
         </section> <!--hero-->
 
-        <section class="problema" style="background-color:#1B1721; min-height: 70vh; padding:60px 90px; color: white; margin-bottom: 0;">
+        <section class="problema" id="problema" style="background-color:#1B1721; min-height: 70vh; padding:60px 90px; color: white; margin-bottom: 0;">
             <div class="container-titulo-problema" style="font-size: 3rem; color: white; font-weight: 600; margin-bottom:0;">
                 <p style="margin: 0;">O <span style="color: #AE8CDA; margin-right:15px;">Problema</span>Encontrado</p>
             </div>
@@ -99,7 +99,7 @@
             </div>
         </section> <!--problema-->
 
-        <section class="solucao" style="background-color:#1B1721; min-height: 120vh; padding:60px 90px; color: white;">
+        <section class="solucao" id="solucao" style="background-color:#1B1721; min-height: 120vh; padding:60px 90px; color: white;">
             <p class="titulo-solucao" style="font-size: 3rem; color: white; font-weight: 600; margin-bottom:0; margin-left: 40%; margin-top: -2%; ">Nossa <span style="color:#AE8CDA;">Solução</span></p>
             <div class="cards-solucao-container" style="position: relative;">
                 <div class="cards-solucao-esq" style="background-color: aqua; width: 25%; height: auto; margin-left: 25%;">
@@ -194,16 +194,16 @@
         </section> <!--criadoras-->
     </main>
 
-    <footer style="background-color: #6D4A9B; width: 100%; height: 30vh;">
+    <footer id="footer" style="background-color: #6D4A9B; width: 100%; height: 30vh;">
         <div class="logo-footer" style="width:80%; position: relative; background-color: #49227B; left:50%; transform: translateX(-48%);">
             <img style="position: absolute; width:5%; left:50%; transform: translateX(-170%); top:30px;" src="./assets/logoStudyCore.png" alt="Logo do studycore">
             <p style="position: absolute; left:50%; transform: translateX(-50%); top:42px; color: white; font-size: 1.3rem;">StudyCore</p>
         </div>
         <div class="links-footer" style="position: absolute; top: 420%; left:50%; transform: translateX(-50%); color:white; ">
-            <a href="#" style="color:white;">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="#" style="color:white;">Sobre</a> &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="#" style="color:white;">Serviços</a> &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="#" style="color:white;">Contato</a> 
+            <a href="#home" style="color:white;">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#problema" style="color:white;">Sobre</a> &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#solucao" style="color:white;">Serviços</a> &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#footer" style="color:white;">Contato</a> 
         </div>
         <div class="redes-sociais" style="position: absolute; top: 427%; left:50%; transform: translateX(-50%);">
             <img src="./assets/icons8-instagram-50.png" alt="Instragra, do studycore" style="width:30px; height:30px;"> &nbsp; &nbsp; &nbsp; &nbsp;
